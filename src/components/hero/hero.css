@@ -1,0 +1,63 @@
+/* 
+
+CONTENTS:
+
+    1. GENERAL STYLES FOR HERO SECTION
+    2. LEFT SECTION
+    3. RIGHT SECTION 
+
+*/
+
+/* 1. GENERAL STYLES FOR HERO SECTION */
+
+section.hero {
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+section.hero .avatar{
+    width: 140px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+}
+
+/* 2. LEFT SECTION */
+
+section.hero h1.title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+section.hero p.sub-title{
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+    color: var(--subtitle);
+}
+
+section.hero .all-icons{
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover{
+    font-size: 1.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+
+/* 3. RIGHT SECTION */
+
+.animation {
+    width: 100%;
+    translate: 5px 5px;
+}
+
+@media (max-width: 1250px) {
+    section.hero .animation{display: none;}
+}
+
