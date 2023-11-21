@@ -9,7 +9,7 @@ const Hero = () => {
 
         <div className='left-section'>
           <div className="parent-avatar">
-            <img className='avatar' src="./me.jpg" alt="my photo" />
+            <img className='avatar' src="./me.jpg" alt="me" />
           </div>
           <h1 className='title'>
             Lorem ipsum dolor sit amet consectetur.
