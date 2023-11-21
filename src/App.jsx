@@ -9,10 +9,13 @@ function App() {
   return (
     <div className='container'>
       <Header />
+      <div className='divider'></div>
       <Hero />
       <div className='divider'></div>
       <Main />
+      <div className='divider'></div>
       <Contact />
+      <div className='divider'></div>
       <Footer />
     </div>
   );
