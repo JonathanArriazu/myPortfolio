@@ -2,6 +2,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -100,6 +101,24 @@ button:active {
   background: #555;
 }
 
+.scrollToTop{
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.6;
+}
+
+.scrollToTop:hover{
+  background-color: rgb(25, 118, 210);
+  opacity: 0.8;
+}
+
 @media (max-width: 1000px) {
   .container{
       width: 90%;
@@ -123,5 +142,10 @@ button:active {
     /* Allow the divider to reach de border of the container */
     width: calc(100% + 1.7rem + 1.7rem);
     margin-left: -1.7rem;
+  }
+
+  .scrollToTop{
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
