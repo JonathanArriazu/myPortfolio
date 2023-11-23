@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/header/header';
 import Hero from './components/hero/hero';
@@ -9,6 +9,20 @@ import Footer from './components/footer/footer';
 import { Link } from 'react-router-dom';
 
 function App() {
+
+  const [scrollY, setScrollY] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        setScrollY(true)
+      } else {
+        setScrollY(false)
+      }
+    })
+  }, [])
+  
+
   return (
     <div id='top' className='container'>
       <Header />
@@ -20,9 +34,20 @@ function App() {
       <div className='divider'></div>
       <Footer />
 
-      <a href="#top">
+      
+      {
+        scrollY && (
+          <a href="#top">
+            <button className='scrollToTop icon-keyboard_arrow_up'></button>
+          </a>
+        )
+      }
+
+      {/* <a href="#top" style={{opacity: scrollY ? 1 : 0, transition: '1s'}} >
         <button className='scrollToTop icon-keyboard_arrow_up'></button>
-      </a>
+      </a> */}
+
+      
     </div>
   );
 }
