@@ -16,9 +16,9 @@ section.hero {
 }
 
 section.hero .avatar{
-    width: 140px;
+    width: 160px;
     border-radius: 50%;
-    border: 1px solid darkorange;
+    border: 1px solid var(--blue);
 }
 
 /* 2. LEFT SECTION */

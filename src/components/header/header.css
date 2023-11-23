@@ -24,6 +24,8 @@ header.flex nav{
     background-color: var(--bgHeader);
     padding: 0.77rem 1.6rem;
     border-radius: 55px;
+    border: 1px solid var(--blue);
+    /* box-shadow: 0px 4px 23px -8px rgba(0,0,0,0.45); */
 }
 
 header ul {
@@ -62,18 +64,24 @@ header .icon-menu, header button.mode {
     width: 2.4rem;
     border-radius: 50%;
     color: var(--subtitle);
-    border: 1px solid rgba(244, 165, 96, 0.25);
+    border: 1px solid var(--blue);
     transition: 0.2s;
+    /* box-shadow: 0px 4px 23px -8px rgba(0,0,0,0.45); */
 }
 
 header .icon-menu:hover, header button.mode:hover {
     color: var(--title);
-    border: 1px solid rgba(244, 165, 96);
+    border: 1px solid var(--blue)
+}
+
+header .icon-sun{
+    color: orange;
 }
 
 /* 3. BACKGROUND WHEN MODAL POP UP */
 
 header .fixed{
+    z-index: 1;
     position: fixed;
     top: 0;
     bottom: 0;
