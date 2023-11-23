@@ -1,4 +1,15 @@
+/* 
 
+CONTENTS:
+
+    1. GENERAL STYLES FOR CONTACT SECTION
+    2. STYLES FOR LEFT SIDE
+    3. STYLES FOR RIGHT SIDE
+    4. RESPONSIVE DESIGN
+
+*/
+
+/* 1. GENERAL STYLES FOR CONTACT SECTION */
 
 section.contact-me .icon-envelope{
     color: var(--subtitle);
@@ -17,6 +28,8 @@ section.contact-me .sub-title{
     margin-bottom: 2rem;
     line-height: 1.65rem;
 }
+
+/* 2. STYLES FOR LEFT SIDE */
 
 section.contact-me label{
     color: var(--subtitle);
@@ -74,6 +87,14 @@ section.contact-me .submit{
 
 section.contact-me .submit:hover{
     opacity: 1;;
+}
+
+/* 3. STYLES FOR RIGHT SIDE */
+
+
+/* 4. RESPONSIVE DESIGN */
+@media (max-width: 1000px) {
+    section.contact-me .contact-animation{display: none;}
 }
 
 @media (max-width: 600px){

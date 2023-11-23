@@ -6,8 +6,6 @@ import Main from './components/main/main';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 
-import { Link } from 'react-router-dom';
-
 function App() {
 
   const [scrollY, setScrollY] = useState(false);
