@@ -143,8 +143,7 @@ header .icon-close:hover {
 
 /* 6. RESPONSIVE DESIGN */
 
-@media (max-width: 700px) {
-
+@media (min-width: 577px) and (max-width: 768px) {
     header.flex {
         justify-content: space-between;
     }

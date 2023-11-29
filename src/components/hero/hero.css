@@ -5,6 +5,7 @@ CONTENTS:
     1. GENERAL STYLES FOR HERO SECTION
     2. LEFT SECTION
     3. RIGHT SECTION 
+    4. RESPONSIVE DESIGN
 
 */
 
@@ -13,28 +14,67 @@ CONTENTS:
 section.hero {
     margin-top: 3rem;
     justify-content: space-between;
-}
-
-section.hero .avatar{
-    width: 160px;
-    border-radius: 50%;
-    border: 1px solid var(--blue);
+    align-items: center;
+    gap: 60px;
 }
 
 /* 2. LEFT SECTION */
 
-section.hero h1.title{
-    font-size: 2.85rem;
-    line-height: 3.3rem;
-    margin: 24px 0;
+section.hero .left-section{
+    justify-content: center;
+}
+
+section.hero .left-section .photo{
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid var(--blue);
+}
+
+/* 3. RIGHT SECTION */
+
+section .right-section{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+section.hero h3.sub-title{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
     color: var(--title);
 }
 
-section.hero p.sub-title{
+section.hero h1.title{
+    font-size: 2.85rem;
+    line-height: 3rem;
+    color: var(--title);
+}
+
+section.hero p.text{
     font-size: 0.9rem;
     line-height: 1.65rem;
-    margin-bottom: 32px;
+    padding: 20px 0 20px 0;
     color: var(--subtitle);
+}
+
+section.hero .right-section .button-container{
+    padding-bottom: 32px;
+}
+
+section.hero .right-section .button-container button{
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.8rem 0;    
+    font-size: 1.05rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    letter-spacing: 0.6px;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.2s;
 }
 
 section.hero .all-icons{
@@ -50,14 +90,69 @@ section.hero .all-icons .icon:hover{
     color: var(--icon-hover);
 }
 
-/* 3. RIGHT SECTION */
+/* 4. RESPONSIVE DESIGN */
 
-.animation {
-    width: 100%;
-    translate: 5px 5px;
+@media (max-width: 576px) {
+
+    section.hero{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    section.hero .left-section .photo{
+        width: 230px;
+    }
+
+    section.hero h3.sub-title{
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    section.hero h1.title{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+    section.hero p.text{
+        font-size: 0.8rem;
+        padding: 26px 0 26px 0;
+        color: var(--subtitle);
+    }
+
+    section.hero .right-section .button-container{
+        padding-bottom: 26px;
+    }
+
+    section.hero .right-section .button-container button{
+        width: 9rem;        
+    }
+
+    section.hero .all-icons{
+        font-size: 1.4rem;
+    }
+    
+    section.hero .all-icons .icon:hover{
+        font-size: 1.5rem;
+    }
+
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+    section.hero{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    section.hero .left-section .photo{
+        width: 280px;
+    }
+}
+
+/* @media (min-width: 769px) and (max-width: 992px) {
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+}
 @media (max-width: 1250px) {
-    section.hero .animation{display: none;}
-}
+} */
 
