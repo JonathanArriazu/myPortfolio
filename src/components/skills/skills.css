@@ -1,0 +1,102 @@
+/* 
+
+CONTENTS:
+
+    1. GENERAL STYLES FOR SKILLS SECTION
+    2. STYLES FOR TITLE AND TEXT
+    3. IMAGE STYLES
+    4. RESPONSIVE DESIGN
+
+*/
+
+/* 1. GENERAL STYLES FOR SKILLS SECTION */
+
+section.skills-container .skills-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+/* 2. STYLES FOR TITLE AND TEXT */
+
+section.skills-container .skills-wrapper .title{
+    line-height: 3rem;
+}
+
+section.skills-container .skills-wrapper .text{
+    padding: 20px 0 40px 0;
+}
+
+/* 3. IMAGE STYLES */
+
+section.skills-container .skills-wrapper .skills-images{
+    width: 100%;
+    /* max-width: 600px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+section.skills-container .skills-wrapper .skills-images .skill{
+    width: 130px;
+    text-align: center;
+}
+
+section.skills-container .skills-wrapper .skills-images img{
+    width: 80px;
+    height: 80px;
+}
+
+section.skills-container .skills-wrapper .skills-images .icon-text{
+    padding-top: 5px;
+}
+
+/* 4. RESPONSIVE DESIGN */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    section.skills-container .skills-wrapper .skills-images{
+        gap: 40px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images .skill{
+        width: 95px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images img{
+        width: 65px;
+        height: 65px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images .icon-text{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    section.skills-container .skills-wrapper .skills-images{
+        gap: 35px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images .skill{
+        width: 85px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images img{
+        width: 58px;
+        height: 58px;
+    }
+
+    section.skills-container .skills-wrapper .skills-images .icon-text{
+        font-size: 12px;
+    }
+
+
+
+}
