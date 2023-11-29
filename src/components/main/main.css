@@ -87,6 +87,7 @@ main section.right-section.flex{
 }
 
 .card .box .title{
+    font-size: 1.2rem;
     color: var(--title);
     /* text-transform: capitalize; */
 }

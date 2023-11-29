@@ -24,7 +24,6 @@ section.contact-me .icon-envelope{
 section.contact-me .title{
     color: var(--title);
     margin-bottom: 1rem;
-    font-size: 2.1rem;
 }
 
 section.contact-me .sub-title{
@@ -121,6 +120,33 @@ section.contact-me .animation-container .contact-animation svg{
 
 
 /* 4. RESPONSIVE DESIGN */
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    section.contact-me .animation-container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    section.contact-me .animation-container .contact-animation svg{
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    section.contact-me .animation-container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    section.contact-me .animation-container .contact-animation svg{
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
 @media (max-width: 992px) {
     section.contact-me .animation-container{display: none;}
 }
@@ -166,30 +192,4 @@ section.contact-me .animation-container .contact-animation svg{
         align-items: center;
     }
     
-}
-
-@media (min-width: 993px) and (max-width: 1200px) {
-    section.contact-me .animation-container{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    section.contact-me .animation-container .contact-animation svg{
-        width: 100% !important;
-        height: 100% !important;
-    }
-}
-
-@media (min-width: 1201px) and (max-width: 1400px) {
-    section.contact-me .animation-container{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    section.contact-me .animation-container .contact-animation svg{
-        width: 100% !important;
-        height: 100% !important;
-    }
 }

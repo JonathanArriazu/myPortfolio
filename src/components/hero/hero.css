@@ -40,19 +40,16 @@ section .right-section{
 }
 
 section.hero h3.sub-title{
-    font-size: 1.8rem;
     line-height: 2.3rem;
     color: var(--title);
 }
 
 section.hero h1.title{
-    font-size: 2.85rem;
     line-height: 3rem;
     color: var(--title);
 }
 
 section.hero p.text{
-    font-size: 1.3rem;
     line-height: 1.65rem;
     padding: 20px 0 20px 0;
     color: var(--subtitle);
@@ -78,7 +75,7 @@ section.hero .right-section .button-container button{
     letter-spacing: 0.6px;
     font-weight: bold;
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 section.hero .all-icons{
@@ -89,12 +86,64 @@ section.hero .all-icons{
 
 section.hero .all-icons .icon:hover{
     font-size: 1.4rem;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
     color: var(--icon-hover);
 }
 
 /* 4. RESPONSIVE DESIGN */
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    section.hero {
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    section.hero .left-section .photo {
+        width: 280px;
+    }
+
+     section.hero h3.sub-title{
+        line-height: 2.3rem;
+    }
+
+    section.hero h1.title{
+        line-height: 2rem;
+    }
+    
+    section.hero p.text{
+        padding: 26px 0 26px 0;
+        color: var(--subtitle);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    section.hero{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    section.hero .left-section .photo{
+        width: 280px;
+    }
+
+    section.hero h3.sub-title{
+        line-height: 2.3rem;
+    }
+
+    section.hero h1.title{
+        line-height: 2rem;
+    }
+    
+    section.hero p.text{
+        padding: 26px 0 26px 0;
+        color: var(--subtitle);
+    }
+   
+}
 
 @media (max-width: 576px) {
 
@@ -108,17 +157,14 @@ section.hero .all-icons .icon:hover{
     }
 
     section.hero h3.sub-title{
-        font-size: 1.5rem;
         line-height: 2.3rem;
     }
 
     section.hero h1.title{
-        font-size: 1.8rem;
         line-height: 2rem;
     }
     
     section.hero p.text{
-        font-size: 0.8rem;
         padding: 26px 0 26px 0;
         color: var(--subtitle);
     }
@@ -139,48 +185,6 @@ section.hero .all-icons .icon:hover{
         font-size: 1.5rem;
     }
 
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    section.hero{
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    section.hero .left-section .photo{
-        width: 280px;
-    }
-   
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-
-    section.hero {
-        margin-top: 3rem;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    section.hero .left-section .photo {
-        width: 280px;
-    }
-
-     section.hero h3.sub-title{
-        font-size: 1.7rem;
-        line-height: 2.3rem;
-    }
-
-    section.hero h1.title{
-        font-size: 2.5rem;
-        line-height: 2rem;
-    }
-    
-    section.hero p.text{
-        font-size: 1.1rem;
-        padding: 26px 0 26px 0;
-        color: var(--subtitle);
-    }
 }
 
 /* @media (min-width: 769px) and (max-width: 992px) {

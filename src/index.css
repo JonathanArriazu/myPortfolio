@@ -56,6 +56,21 @@ body {
   margin-left: -4rem;
 }
 
+h1{
+  font-size: 2.85rem;
+  color: var(--title);
+}
+
+h3{
+  font-size: 1.8rem;
+  color: var(--title);
+}
+
+p{
+  font-size: 1.3rem;
+  color: var(--subtitle);
+}
+
 li {
   list-style: none;
 }
@@ -63,7 +78,7 @@ li {
 a {
   text-decoration: none;
   color: initial;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 a:hover {
@@ -132,7 +147,7 @@ button:disabled{
   color: #fff;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 993px) {
   .container{
       width: 90%;
       padding: 0 1.7rem;
@@ -145,7 +160,7 @@ button:disabled{
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .container{
       width: 98%;
       padding: 0 1.7rem;
@@ -157,8 +172,50 @@ button:disabled{
     margin-left: -1.7rem;
   }
 
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h3{
+    font-size: 1.7rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+
   .scrollToTop{
     width: 2.2rem;
     height: 2.2rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+  h1{
+    font-size: 2.2rem;
+  }
+
+  h3{
+    font-size: 1.6rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+  }
+ 
+}
+
+@media (max-width: 576px) {
+  h1{
+    font-size: 1.8rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1rem;
   }
 }

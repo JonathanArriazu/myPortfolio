@@ -56,7 +56,7 @@ const Main = () => {
               <img src={item.imgPath} alt="" />
 
               <div className='box'>
-                <h1 className='title'>{item.projectTitle}</h1>
+                <h3 className='title'>{item.projectTitle}</h3>
                 <p className='sub-title'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nesciunt qui deleniti cum illum harum. </p>
                 
                 <div className='flex icons'>
