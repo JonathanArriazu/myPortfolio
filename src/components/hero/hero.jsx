@@ -19,7 +19,7 @@ const Hero = () => {
             Jonathan Arriazu,
           </h1>
           <p className='text'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem culpa ipsum minus aut possimus accusamus quis voluptatum sit cumque debitis commodi rerum, qui dolorum ducimus maiores deleniti? Ipsa, aliquid illum aut enim laudantium quam, voluptas consectetur, rerum officia ea officiis?
+            I'm a <span className='front-end'>Frontend Developer</span> from Argentina with a passion for frontend web development. Welcome to my portfolio. I'm glad you're here!
           </p>
           <div className='flex button-container'>
             <button>Download CV</button>

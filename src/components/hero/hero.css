@@ -13,7 +13,7 @@ CONTENTS:
 
 section.hero {
     margin-top: 3rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 60px;
 }
@@ -52,10 +52,14 @@ section.hero h1.title{
 }
 
 section.hero p.text{
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     line-height: 1.65rem;
     padding: 20px 0 20px 0;
     color: var(--subtitle);
+}
+
+section.hero p.text .front-end{
+    color: var(--blue);
 }
 
 section.hero .right-section .button-container{
@@ -145,6 +149,37 @@ section.hero .all-icons .icon:hover{
 
     section.hero .left-section .photo{
         width: 280px;
+    }
+   
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    section.hero {
+        margin-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    section.hero .left-section .photo {
+        width: 280px;
+    }
+
+     section.hero h3.sub-title{
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+
+    section.hero h1.title{
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+    
+    section.hero p.text{
+        font-size: 1.1rem;
+        padding: 26px 0 26px 0;
+        color: var(--subtitle);
     }
 }
 
