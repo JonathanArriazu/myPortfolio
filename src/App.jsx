@@ -24,10 +24,10 @@ function App() {
 
   return (
     <div id='top' className='container'>
-      <Header />
+      <Header  />
       <Hero />      
       <div className='divider'></div>
-      <Skills />
+      <Skills/>
       <div className='divider'></div>
       <Main />
       <div className='divider'></div>

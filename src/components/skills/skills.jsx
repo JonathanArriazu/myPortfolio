@@ -3,7 +3,7 @@ import './skills.css'
 
 const Skills = () => {
   return (
-    <section className='skills-container'>
+    <section id='skills' className='skills-container'>
         <div className='skills-wrapper'>
             <h1 className='title'>Skills</h1>
             <p className='text'>During my career, I have studied and specialized in the following technologies::</p>

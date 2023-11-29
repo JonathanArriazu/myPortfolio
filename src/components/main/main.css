@@ -10,6 +10,10 @@ CONTENTS:
 
 /* 1. GENERAL STYLES FOR HERO SECTION */
 
+.projects-title{
+    margin-bottom: 26px;
+}
+
 main.flex{
     gap: 2.6rem;
     align-items: start;
