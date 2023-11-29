@@ -76,10 +76,13 @@ main section.right-section.flex{
 }
 
 .card img{
+    width: 266px;
+    height: 150px;
     border-radius: 1px;
 }
 
 .card .box{
+    width: 266px;
     padding: 1rem 0.4rem;
 }
 
@@ -117,7 +120,7 @@ main section.right-section.flex{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     main.flex{
         flex-direction: column;
         gap: 2.6rem;
@@ -136,4 +139,13 @@ main section.right-section.flex{
         padding: 0.8rem 0;
         font-size: 0.9rem;
     }
+
+    .card img{
+        width: 236px;
+    }
+    
+    .card .box{
+        width: 236px;
+    }
+
 }

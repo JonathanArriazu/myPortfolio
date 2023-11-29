@@ -53,9 +53,9 @@ const Main = () => {
         {array.map((item) => {
           return(
             <article key={item.id} className='card'>
-              <img width={266} src={item.imgPath} alt="" />
+              <img src={item.imgPath} alt="" />
 
-              <div style={{width: '266px'}} className='box'>
+              <div className='box'>
                 <h1 className='title'>{item.projectTitle}</h1>
                 <p className='sub-title'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nesciunt qui deleniti cum illum harum. </p>
                 
