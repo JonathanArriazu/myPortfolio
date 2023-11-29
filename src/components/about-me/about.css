@@ -1,0 +1,93 @@
+/* 
+
+CONTENTS:
+
+    1. GENERAL STYLES FOR ABOUT ME SECTION
+    2. LEFT SECTION
+    3. RIGHT SECTION 
+    4. RESPONSIVE DESIGN
+
+*/
+
+/* 1. GENERAL STYLES FOR ABOUT ME SECTION */
+
+section .about-title{
+    margin-bottom: 1rem;
+}
+
+/* 2. LEFT SECTION */
+
+section .about-information-container .about-information{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+section .about-information-container .about-information .about-name{
+    padding-bottom: 5px;
+}
+
+section .about-information-container .about-information .about-profession{
+    font-size: 1.1rem;
+    color: var(--blue);
+    padding-bottom: 24px;
+}
+
+section .about-information-container .about-information .about-text{
+    padding-bottom: 20px;
+}
+
+section .about-information-container .about-information ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section .about-information-container .about-information ul li{
+    font-size: 1.3rem;
+    color: var(--title);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 3. RIGHT SECTION  */
+
+section .about-information-container .about-image-container{
+    text-align: center;
+    width: 100%;
+}
+
+section .about-information-container .about-image-container .about-image{
+    border-radius: 15%;
+    width: 80%;
+}
+
+/* 4. RESPONSIVE DESIGN */
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    section .about-information-container .about-image-container{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    section .about-information-container .about-image-container{
+        display: none;
+    }
+
+    section .about-information-container .about-information .about-profession{
+        font-size: 1rem;
+    }
+
+    section .about-information-container .about-information ul li strong{
+        font-size: 1rem;
+    }
+
+}

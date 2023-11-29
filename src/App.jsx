@@ -6,6 +6,7 @@ import Main from './components/main/main';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Skills from './components/skills/skills';
+import About from './components/about-me/about';
 
 function App() {
 
@@ -25,7 +26,9 @@ function App() {
   return (
     <div id='top' className='container'>
       <Header  />
-      <Hero />      
+      <Hero /> 
+      <div className='divider'></div>
+      <About />
       <div className='divider'></div>
       <Skills/>
       <div className='divider'></div>

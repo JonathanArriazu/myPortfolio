@@ -6,7 +6,7 @@ const Skills = () => {
     <section id='skills' className='skills-container'>
         <div className='skills-wrapper'>
             <h1 className='title'>Skills</h1>
-            <p className='text'>During my career, I have studied and specialized in the following technologies::</p>
+            <p className='text'>During my career, I have studied and specialized in the following technologies:</p>
             <div className='skills-images'>
                 <a className='skill' href="https://en.wikipedia.org/wiki/HTML">
                     <img alt="html" src="./images/skills/html.svg"/>
