@@ -21,8 +21,8 @@ const Contact = () => {
         atque perspiciatis at?
       </p>
 
-      <div style={{ justifyContent: "space-between" }} className="flex">
-        <form onSubmit={handleSubmit}>
+      <div className="flex form-container">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="flex">
             <label htmlFor="email">Email Address:</label>
             <input required type="email" name="email" id="email" />
@@ -43,9 +43,11 @@ const Contact = () => {
             />
           </div>
 
-          <button className="submit" type="submit" disabled={state.submitting}>
-            {state.submitting ? "Submitting..." : "Submit"}
-          </button>
+          <div className="flex submit-container">
+            <button className="submit" type="submit" disabled={state.submitting}>
+              {state.submitting ? "Submitting..." : "Submit"}
+            </button>
+          </div>
 
           {state.succeeded && (
             <p
@@ -61,9 +63,9 @@ const Contact = () => {
             </p>
           )}
         </form>
-        <div className="animation">
+        <div className="animation-container">
           <Lottie
-          className="contact-animation"
+            className="contact-animation"
             animationData={emailAnimation}
           />
         </div>

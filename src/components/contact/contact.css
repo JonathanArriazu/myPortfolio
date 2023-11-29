@@ -11,6 +11,10 @@ CONTENTS:
 
 /* 1. GENERAL STYLES FOR CONTACT SECTION */
 
+section.contact-me .form-container{
+    gap: 20px;
+}
+
 section.contact-me .icon-envelope{
     color: var(--subtitle);
     margin-right: 1rem;
@@ -31,7 +35,16 @@ section.contact-me .sub-title{
 
 /* 2. STYLES FOR LEFT SIDE */
 
+section.contact-me .form-container{
+    justify-content: space-between;
+}
+
+section.contact-me form{
+    width: 100%;
+}
+
 section.contact-me label{
+    width: 11rem;
     color: var(--subtitle);
 }
 
@@ -40,7 +53,7 @@ section.contact-me #message{
     all: unset;
     background-color: rgba(63, 63, 70, 0.15);
     border: 1px solid rgb(63, 63, 70);
-    width: 16rem;
+    width: 100%;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
     border-radius: 5px;
@@ -71,7 +84,11 @@ section.contact-me #message{
     resize: vertical;
 }
 
-section.contact-me .submit{
+section.contact-me .submit-container{
+    justify-content: flex-end;
+}
+
+section.contact-me .submit-container .submit{
     background-color: rgba(36, 37, 46, 1);
     padding: 0.75rem 2rem;
     text-align: center;
@@ -85,21 +102,40 @@ section.contact-me .submit{
     transition: 0.3s;
 }
 
-section.contact-me .submit:hover{
+section.contact-me .submit-container .submit:hover{
     opacity: 1;;
 }
 
 /* 3. STYLES FOR RIGHT SIDE */
 
-
-/* 4. RESPONSIVE DESIGN */
-@media (max-width: 1000px) {
-    section.contact-me .contact-animation{display: none;}
+section.contact-me .animation-container .contact-animation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-@media (max-width: 600px){
+section.contact-me .animation-container .contact-animation svg{
+    width: 80% !important;
+    height: 80% !important;
+}
 
-    section.contact-me .animation{display: none};
+
+/* 4. RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    section.contact-me .animation-container{display: none;}
+}
+
+@media (max-width: 768px){
+
+    section.contact-me .sub-title{
+        margin-bottom: 3rem;
+    }
+
+    section.contact-me .form-container{
+        gap: 0;
+    }
+
+    section.contact-me .animation-container{display: none};
 
     section.contact-me form{
         display: flex;
@@ -120,8 +156,40 @@ section.contact-me .submit:hover{
         margin-top: 1rem;
     }
 
-    section.contact-me .submit{
-        width: 30%;
+    section.contact-me .submit-container {
+        justify-content: flex-end;
+        align-items: flex-end !important;
+    }
+
+    section.contact-me .submit-container .submit{
+        width: 15%;
         align-items: center;
+    }
+    
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    section.contact-me .animation-container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    section.contact-me .animation-container .contact-animation svg{
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+    section.contact-me .animation-container{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    section.contact-me .animation-container .contact-animation svg{
+        width: 100% !important;
+        height: 100% !important;
     }
 }
