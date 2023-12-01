@@ -79,13 +79,22 @@ section.hero .right-section .button-container button{
     transition: 0.3s;
 }
 
+section.hero .right-section .button-container button a{
+    color: var(--title);
+}
+
 section.hero .all-icons{
-    font-size: 1.3rem;
     gap: 1.5rem;
+}
+
+section.hero .all-icons a.icon{
+    font-size: 1.3rem;
+    cursor: pointer;
     color: var(--subtitle);
 }
 
-section.hero .all-icons .icon:hover{
+section.hero .all-icons a.icon:hover{
+    text-decoration: none;
     font-size: 1.4rem;
     transition: 0.3s;
     cursor: pointer;
@@ -177,7 +186,10 @@ section.hero .all-icons .icon:hover{
     }
 
     section.hero .right-section .button-container button{
-        width: 9rem;        
+        width: 9rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1rem;
+
     }
 
     section.hero .all-icons{

@@ -73,6 +73,22 @@ section .about-information-container .about-image-container .about-image{
 
 /* 4. RESPONSIVE DESIGN */
 
+@media (max-width: 1550px)  {
+    section .about-information-container .about-information ul li{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    section .about-information-container .about-information ul li{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
+    }
+}
+
 @media (min-width: 577px) and (max-width: 768px) {
 
     section.about-me{ 
@@ -81,6 +97,12 @@ section .about-information-container .about-image-container .about-image{
 
     section .about-information-container .about-image-container{
         display: none;
+    }
+
+    section .about-information-container .about-information ul li{
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
     }
 }
 
@@ -98,7 +120,12 @@ section .about-information-container .about-image-container .about-image{
         font-size: 1rem;
     }
 
-    section .about-information-container .about-information ul li strong{
+    section .about-information-container .about-information ul li{
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+
+    section .about-information-container .about-information ul li{
         font-size: 1rem;
     }
 

@@ -7,14 +7,7 @@ const Footer = () => {
     
     <footer className='flex'>
 
-      <ul className='flex'>
-        <li><Link to="">About</Link></li>
-        <li><Link to="">Projects</Link></li>
-        <li><Link to="">Speaking</Link></li>
-        <li><Link to="">Uses</Link></li>
-      </ul>
-
-      <p>© Jonathan Arriazu. All rights reserved.</p>
+      <p>Copyright © 2023, Jonathan Arriazu. All Rights Reserved.</p>
 
     </footer>
 

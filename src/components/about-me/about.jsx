@@ -15,7 +15,10 @@ const About = () => {
               <strong>Expertise:</strong><p>Frontend Web Development</p>
             </li>
             <li>
-              <strong>Experience:</strong><p>3 Years</p>
+              <strong>Studies:</strong><p>1 Year in Rolling Code School - FullStack Developer</p>
+            </li>
+            <li>
+              <strong>Experience:</strong><p>1 Year at Siltium as Frontend Developer</p>
             </li>
             <li>
               <strong>Email:</strong><p>joni.arriazu2@gmail.com</p>
