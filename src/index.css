@@ -45,6 +45,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
