@@ -10,6 +10,10 @@ CONTENTS:
 
 /* 1. GENERAL STYLES FOR HERO SECTION */
 
+.main{
+    padding: 120px 0 120px 0;
+}
+
 .projects-title{
     margin-bottom: 26px;
 }
@@ -125,7 +129,12 @@ main section.right-section.flex{
 }
 
 
-@media (max-width: 768px){
+@media (min-width: 577px) and (max-width: 768px){
+
+    .main{
+        padding: 80px 0 80px 0;
+    }
+
     main.flex{
         flex-direction: column;
         gap: 2.6rem;
@@ -153,4 +162,38 @@ main section.right-section.flex{
         width: 236px;
     }
 
+}
+
+@media (max-width: 576px) {
+
+    .main{
+        padding: 78px 0 78px 0;
+    }
+
+    main.flex{
+        flex-direction: column;
+        gap: 2.6rem;
+        align-items: center;
+    }
+
+    main section.left-section.flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main section.left-section.flex button{
+        width: 7rem;
+        padding: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+
+    .card img{
+        width: 236px;
+    }
+    
+    .card .box{
+        width: 236px;
+    }
 }

@@ -11,6 +11,10 @@ CONTENTS:
 
 /* 1. GENERAL STYLES FOR CONTACT SECTION */
 
+section.contact-me{
+    padding: 120px 0 120px 0;
+}
+
 section.contact-me .form-container{
     gap: 20px;
 }
@@ -151,7 +155,11 @@ section.contact-me .animation-container .contact-animation svg{
     section.contact-me .animation-container{display: none;}
 }
 
-@media (max-width: 768px){
+@media (min-width: 577px) and (max-width: 768px){
+
+    section.contact-me{
+        padding: 80px 0 80px 0;
+    }
 
     section.contact-me .sub-title{
         margin-bottom: 3rem;
@@ -192,4 +200,50 @@ section.contact-me .animation-container .contact-animation svg{
         align-items: center;
     }
     
+}
+
+@media (max-width: 576px) {
+
+    section.contact-me{
+        padding: 78px 0 78px 0;
+    }
+
+    section.contact-me .sub-title{
+        margin-bottom: 3rem;
+    }
+
+    section.contact-me .form-container{
+        gap: 0;
+    }
+
+    section.contact-me .animation-container{display: none};
+
+    section.contact-me form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    section.contact-me form div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section.contact-me #email,
+    section.contact-me #message {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+    }
+
+    section.contact-me .submit-container {
+        justify-content: flex-end;
+        align-items: flex-end !important;
+    }
+
+    section.contact-me .submit-container .submit{
+        width: 15%;
+        align-items: center;
+    }
 }

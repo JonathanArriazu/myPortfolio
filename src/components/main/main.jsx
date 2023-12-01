@@ -22,8 +22,8 @@ const Main = () => {
   };
 
   return (
-    <>
-      <h1 id="projects" className="projects-title">Projects</h1>
+    <div id="projects" className="main">
+      <h1  className="projects-title">Projects</h1>
       <main className="flex">
         <section className="flex left-section">
           <button
@@ -102,7 +102,7 @@ const Main = () => {
           })}
         </section>
       </main>
-    </>
+    </div>
   );
 };
 

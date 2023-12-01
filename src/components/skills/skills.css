@@ -11,6 +11,10 @@ CONTENTS:
 
 /* 1. GENERAL STYLES FOR SKILLS SECTION */
 
+section.skills-container{
+    padding: 120px 0 120px 0;
+}
+
 section.skills-container .skills-wrapper{
     display: flex;
     flex-direction: column;
@@ -59,6 +63,10 @@ section.skills-container .skills-wrapper .skills-images .icon-text{
 
 @media (min-width: 577px) and (max-width: 768px) {
 
+    section.skills-container{
+        padding: 80px 0 80px 0;
+    }
+
     section.skills-container .skills-wrapper .skills-images{
         gap: 40px;
     }
@@ -79,6 +87,10 @@ section.skills-container .skills-wrapper .skills-images .icon-text{
 }
 
 @media (max-width: 576px) {
+
+    section.skills-container{
+        padding: 78px 0 78px 0;
+    }
 
     section.skills-container .skills-wrapper .skills-images{
         gap: 35px;

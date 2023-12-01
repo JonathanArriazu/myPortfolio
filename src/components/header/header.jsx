@@ -22,43 +22,44 @@ const Header = () => {
 
   return (    
     <header className='flex'>
-      <button 
-        className='flex menu icon-menu' 
-        onClick={() => {setShowModal(true)}}
-      />
-      <nav className='color'>
-        <ul className='flex'>
-          <li>
-            <a href="#top">Home</a>
-            </li>
-          <li>
-            <a href="#about">About me</a>
-            </li>
-          <li>
-            <a href="#skills">Skills</a>
-            </li>
-          <li>
-            <a href="#projects">Projects</a>
-            </li>
-          <li>
-            <a href="#contact">Contact</a>
-            </li>
-        </ul>
-      </nav>
+        <button 
+          className='flex menu icon-menu' 
+          onClick={() => {setShowModal(true)}}
+        />
+        <nav className='color'>
+          <ul className='flex'>
+            <li>
+              <a href="#top">Home</a>
+              </li>
+            <li>
+              <a href="#about">About me</a>
+              </li>
+            <li>
+              <a href="#skills">Skills</a>
+              </li>
+            <li>
+              <a href="#projects">Projects</a>
+              </li>
+            <li>
+              <a href="#contact">Contact</a>
+              </li>
+          </ul>
+        </nav>
 
-      <button 
-        className='flex mode'
-        onClick={() => {
-          localStorage.setItem('currentMode', theme === 'dark' ? 'light' : 'dark');
-          
-          setTheme(localStorage.getItem('currentMode'));
-        }}
-      >
-        {theme === 'dark' ? (
-          <span className='icon-sun'></span>
-        ) : (<span className='icon-moon-o'></span>        
-        )}        
-      </button>
+        <button 
+          className='flex mode'
+          onClick={() => {
+            localStorage.setItem('currentMode', theme === 'dark' ? 'light' : 'dark');
+            
+            setTheme(localStorage.getItem('currentMode'));
+          }}
+        >
+          {theme === 'dark' ? (
+            <span className='icon-sun'></span>
+          ) : (<span className='icon-moon-o'></span>        
+          )}        
+        </button>
+
 
       {showModal && (
         <div className='fixed'>
@@ -71,11 +72,46 @@ const Header = () => {
               }}
             />
           </li>
-          <li><Link to="">Home</Link></li>
-          <li><Link to="">About me</Link></li>
-          <li><Link to="">Skills</Link></li>
-          <li><Link to="">Projects</Link></li>
-          <li><Link to="">Contact</Link></li>
+          <li>
+            <a 
+              href="#top"
+              onClick={() => {
+                setShowModal(false)
+              }}
+            >Home</a></li>
+          <li>
+            <a 
+              href="#about"
+              onClick={() => {
+                setShowModal(false)
+              }}
+              >About me</a>
+          </li>
+          <li>
+            <a 
+              href="#skills"
+              onClick={() => {
+                setShowModal(false)
+              }}
+              >Skills</a>
+          </li>
+          <li>
+            <a 
+              href="#projects"
+              onClick={() => {
+                setShowModal(false)
+              }}
+              >Projects</a>
+          </li>
+          <li>
+            <a 
+              href="#contact"
+              onClick={() => {
+                setShowModal(false)
+              }}
+              >Contact
+            </a>
+          </li>
         </ul>
       </div>
       )}
