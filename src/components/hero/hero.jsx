@@ -22,11 +22,13 @@ const Hero = () => {
             I'm a <span className='front-end'>Frontend Developer</span> from Argentina with a passion for frontend web development. Welcome to my portfolio. I'm glad you're here!
           </p>
           <div className='flex button-container'>
-            <button>Download CV</button>
+            <button>
+              <a className='resume-button' href="./resume/Jonathan-Arriazu-React-Frontend-dev.pdf" download="Jonathan Arriazu React Frontend Dev">Download Resume</a>
+            </button>
           </div>
           <div className='flex all-icons'>
-            <div className="icon icon-github"></div>
-            <div className="icon icon-linkedin"></div>
+            <a className="icon icon-github" href='https://github.com/JonathanArriazu' target='blank'></a>
+            <a className="icon icon-linkedin" href='https://www.linkedin.com/in/jonathanarriazu/' target='blank'></a>
           </div>
         </div>
 
