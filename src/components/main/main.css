@@ -11,6 +11,7 @@ CONTENTS:
 /* 1. GENERAL STYLES FOR HERO SECTION */
 
 .main{
+    width: 100%;
     padding: 120px 0 120px 0;
 }
 
@@ -37,7 +38,7 @@ main section.left-section.flex{
 main section.left-section.flex button{
     background-color: rgba(36, 37, 46, 1);
     width: 11rem;
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.4rem;
     text-align: center;
     font-size: 1.05rem;
     text-transform: capitalize;
@@ -54,7 +55,7 @@ main section.left-section.flex button.active{
     opacity: 1;
     letter-spacing: 0.6px;
     font-weight: bold;
-    padding: 0.8rem 0;
+    padding: 0.8rem 0.5rem;
     border: 1px solid var(--blue);
 }
 
@@ -149,7 +150,7 @@ main section.right-section.flex{
     }
 
     main section.left-section.flex button{
-        width: 7rem;
+        width: 9rem;
         padding: 0.8rem 0;
         font-size: 0.9rem;
     }
@@ -184,7 +185,7 @@ main section.right-section.flex{
     }
 
     main section.left-section.flex button{
-        width: 7rem;
+        width: 9rem;
         padding: 0.8rem 0;
         font-size: 0.9rem;
     }
