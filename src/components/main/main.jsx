@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./main.css";
 import { Link } from "react-router-dom";
 import { myProjects } from "./data/myProjects";
+import { useTranslation } from "react-i18next";
 
 const Main = () => {
   const [currentActive, setCurrentActive] = useState("all");
   const [array, setArray] = useState(myProjects);
+
+  const {t} = useTranslation();
 
   const filterData = (filter) => {
     setCurrentActive(filter);
@@ -23,7 +26,7 @@ const Main = () => {
 
   return (
     <div id="projects" className="main">
-      <h1  className="projects-title">Projects</h1>
+      <h1  className="projects-title">{t('projects')}</h1>
       <main className="flex">
         <section className="flex left-section">
           <button
@@ -32,7 +35,7 @@ const Main = () => {
             }}
             className={currentActive === "all" ? "active" : null}
           >
-            All Projects
+            {t('all-projects')}
           </button>
 
           <button

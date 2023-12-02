@@ -9,8 +9,7 @@ const Hero = () => {
   return (
       <section className='flex hero'>
 
-        <h1>{t('welcome')}</h1>
-        <div>{t('language')}</div>
+        {/* {t('')} */}
 
         <div className='flex left-section'>
             <img className='photo' src="./images/me.jpg" alt="me" />          
@@ -18,17 +17,17 @@ const Hero = () => {
 
         <div className='flex right-section'>
           <h3 className='sub-title'>
-            Hi, I'm
+            {t('hi')}
           </h3>
           <h1 className='title'>
             Jonathan Arriazu,
           </h1>
           <p className='text'>
-            I'm a <span className='front-end'>Frontend Developer</span> from Argentina with a passion for frontend web development. Welcome to my portfolio. I'm glad you're here!
+            {t('im')} <span className='front-end'>{t('frontend-dev')}</span> {t('presentation')}
           </p>
           <div className='flex button-container'>
             <button>
-              <a className='resume-button' href="./resume/Jonathan-Arriazu-React-Frontend-dev.pdf" download="Jonathan Arriazu React Frontend Dev">Download Resume</a>
+              <a className='resume-button' href="./resume/Jonathan-Arriazu-React-Frontend-dev.pdf" download="Jonathan Arriazu React Frontend Dev">{t('download-cv')}</a>
             </button>
           </div>
           <div className='flex all-icons'>

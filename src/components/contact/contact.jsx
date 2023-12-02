@@ -6,25 +6,27 @@ import emailAnimation from "../../../public/animation/email.json";
 
 import { useForm, ValidationError } from "@formspree/react";
 import Lottie from "lottie-react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xpzggaav");
+
+  const {t} = useTranslation();
 
   return (
     <section id="contact" className="contact-me">
       <h1 className="title">
         <span className="icon-envelope"></span>
-        Contact me
+          {t('contact')}
       </h1>
       <p className="sub-title">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni
-        atque perspiciatis at?
+        {t('contact-intro')}
       </p>
 
       <div className="flex form-container">
         <form className="form" onSubmit={handleSubmit}>
           <div className="flex">
-            <label htmlFor="email">Email Address:</label>
+            <label htmlFor="email">{t('email')}</label>
             <input required type="email" name="email" id="email" />
             <ValidationError
               prefix="Email"
@@ -34,7 +36,7 @@ const Contact = () => {
           </div>
 
           <div className="flex" style={{ marginTop: "24px" }}>
-            <label htmlFor="message">Your message:</label>
+            <label htmlFor="message">{t('message')}</label>
             <textarea required name="message" id="message"></textarea>
             <ValidationError
               prefix="Message"
@@ -45,7 +47,7 @@ const Contact = () => {
 
           <div className="flex submit-container">
             <button className="submit" type="submit" disabled={state.submitting}>
-              {state.submitting ? "Submitting..." : "Submit"}
+              {state.submitting ? `${t('sending-message')}` : `${t('submit')}`}
             </button>
           </div>
 
@@ -59,7 +61,7 @@ const Contact = () => {
                 loop={false}
                 animationData={doneAnimation}
               />
-              Your message has been sent successfully
+              {t('message-success')}
             </p>
           )}
         </form>

@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Header = ({locale, handleChange}) => {
 
   const [showModal, setShowModal] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('currentMode') ?? 'dark');
+
+  const {t} = useTranslation();
 
   useEffect(() => {
     
@@ -29,19 +32,19 @@ const Header = ({locale, handleChange}) => {
         <nav className='color'>
           <ul className='flex'>
             <li>
-              <a href="#top">Home</a>
+              <a href="#top">{t('home')}</a>
               </li>
             <li>
-              <a href="#about">About me</a>
+              <a href="#about">{t('about-me')}</a>
               </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">{t('skills')}</a>
               </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">{t('projects')}</a>
               </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact">{t('contact-header')}</a>
               </li>
           </ul>
         </nav>
@@ -85,14 +88,14 @@ const Header = ({locale, handleChange}) => {
               onClick={() => {
                 setShowModal(false)
               }}
-            >Home</a></li>
+            >{t('home')}</a></li>
           <li>
             <a 
               href="#about"
               onClick={() => {
                 setShowModal(false)
               }}
-              >About me</a>
+              >{t('about-me')}</a>
           </li>
           <li>
             <a 
@@ -100,7 +103,7 @@ const Header = ({locale, handleChange}) => {
               onClick={() => {
                 setShowModal(false)
               }}
-              >Skills</a>
+              >{t('skills')}</a>
           </li>
           <li>
             <a 
@@ -108,7 +111,7 @@ const Header = ({locale, handleChange}) => {
               onClick={() => {
                 setShowModal(false)
               }}
-              >Projects</a>
+              >{t('projects')}</a>
           </li>
           <li>
             <a 
@@ -116,7 +119,7 @@ const Header = ({locale, handleChange}) => {
               onClick={() => {
                 setShowModal(false)
               }}
-              >Contact
+              >{t('contact-header')}
             </a>
           </li>
         </ul>

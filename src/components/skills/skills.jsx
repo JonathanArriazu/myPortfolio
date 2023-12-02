@@ -1,12 +1,16 @@
 import React from 'react'
 import './skills.css'
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+
+    const {t} = useTranslation();
+
   return (
     <section id='skills' className='skills-container'>
         <div className='skills-wrapper'>
-            <h1 className='title'>Skills</h1>
-            <p className='text'>During my career, I have studied and specialized in the following technologies:</p>
+            <h1 className='title'>{t('skills')}</h1>
+            <p className='text'>{t('skills-intro')}</p>
             <div className='skills-images'>
                 <a className='skill' href="https://en.wikipedia.org/wiki/HTML">
                     <img alt="html" src="./images/skills/html.svg"/>
