@@ -16,7 +16,7 @@ CONTENTS:
 header.flex {
     gap: 16px;
     justify-content: center;
-    padding: 0 2.4rem;
+    padding: 0 1.4rem;
     margin-top: 1.2rem;
     position: fixed;
     top: 0;
@@ -34,6 +34,8 @@ header.flex nav{
 
 header ul {
     gap: 16px;
+    width: 30rem;
+    justify-content: space-between;
 }
 
 header ul li a {
@@ -48,6 +50,10 @@ header ul li a:hover {
     opacity: 1;
     font-size: 1.3rem;
     color: var(--blue);
+}
+
+header .buttons-container{
+    gap: 15px;
 }
 
 header button {

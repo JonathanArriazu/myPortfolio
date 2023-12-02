@@ -80,7 +80,7 @@ section.hero .right-section .button-container button{
 }
 
 section.hero .right-section .button-container button a{
-    color: var(--title);
+    color: var(--white);
 }
 
 section.hero .all-icons{

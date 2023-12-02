@@ -49,27 +49,31 @@ const Header = ({locale, handleChange}) => {
           </ul>
         </nav>
 
-        <button 
-          className='flex mode'
-          onClick={() => {
-            localStorage.setItem('currentMode', theme === 'dark' ? 'light' : 'dark');
-            
-            setTheme(localStorage.getItem('currentMode'));
-          }}
-        >
-          {theme === 'dark' ? (
-            <span className='icon-sun'></span>
-          ) : (<span className='icon-moon-o'></span>        
-          )}        
-        </button>
-        
-        <div>
+        <div className='flex buttons-container'>
+
           <button 
-            className='language-change'
-            onClick={() => handleChange(locale === 'en' ? 'es' : 'en')}>
-            {locale === 'en' ? 'ES' : 'EN'}
+            className='flex mode'
+            onClick={() => {
+              localStorage.setItem('currentMode', theme === 'dark' ? 'light' : 'dark');
+              
+              setTheme(localStorage.getItem('currentMode'));
+            }}
+          >
+            {theme === 'dark' ? (
+              <span className='icon-sun'></span>
+            ) : (<span className='icon-moon-o'></span>        
+            )}        
           </button>
-        </div>
+          
+
+            <button 
+              className='language-change'
+              onClick={() => handleChange(locale === 'en' ? 'es' : 'en')}>
+              {locale === 'en' ? 'ES' : 'EN'}
+            </button>
+
+        </div>        
+
 
       {showModal && (
         <div className='fixed'>

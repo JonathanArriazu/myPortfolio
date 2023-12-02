@@ -32,6 +32,12 @@ const Skills = () => {
                     <img alt="javascript" src="./images/skills/javascript.svg"/>
                     <p className='icon-text'>JAVASCRIPT</p>
                 </a>
+
+                <a className='skill' href="https://en.wikipedia.org/wiki/TypeScript">
+                    <img alt="javascript" src="./images/skills/typescript.svg"/>
+                    <p className='icon-text'>TYPESCRIPT</p>
+                </a>
+
                 <a className='skill' href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">
                     <img alt="reactjs" src="./images/skills/reactjs.svg"/>
                     <p className='icon-text'>REACTJS</p>
