@@ -78,6 +78,21 @@ header .icon-menu:hover, header button.mode:hover {
     border: 1px solid var(--blue)
 }
 
+.language-change{
+    text-align: center;
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    color: var(--title);
+    border: 1px solid var(--blue);
+    transition: 0.3s;
+}
+
+.language-change:hover{
+    color: var(--blue);
+}
+
 header .icon-sun{
     color: orange;
 }

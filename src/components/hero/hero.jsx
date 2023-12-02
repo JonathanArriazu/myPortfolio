@@ -1,11 +1,16 @@
 import React from 'react';
 import './hero.css';
-import devAnimation from "/public/animation/dev1.json"
-import Lottie from 'lottie-react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+
+  const {t} = useTranslation();
+
   return (
       <section className='flex hero'>
+
+        <h1>{t('welcome')}</h1>
+        <div>{t('language')}</div>
 
         <div className='flex left-section'>
             <img className='photo' src="./images/me.jpg" alt="me" />          

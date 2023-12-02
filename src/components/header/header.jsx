@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './header.css';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({locale, handleChange}) => {
 
   const [showModal, setShowModal] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('currentMode') ?? 'dark');
@@ -59,7 +59,14 @@ const Header = () => {
           ) : (<span className='icon-moon-o'></span>        
           )}        
         </button>
-
+        
+        <div>
+          <button 
+            className='language-change'
+            onClick={() => handleChange(locale === 'en' ? 'es' : 'en')}>
+            {locale === 'en' ? 'ES' : 'EN'}
+          </button>
+        </div>
 
       {showModal && (
         <div className='fixed'>

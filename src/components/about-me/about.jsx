@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className='about-me' id='about'>
       <h1 className='about-title'>About me</h1>
-      <div class="flex about-information-container">
+      <div className="flex about-information-container">
         <div className='flex about-information'>
           <h3 className='about-name'>Arriazu Jonathan</h3>
           <small className='about-profession'>Frontend Developer</small>
